@@ -13,6 +13,13 @@ We have devided the pipelines into two main sections:
 
 In each section directory you can find each of the pipelines directories containing the dolphinnext pipeline (XX.dn) as well as the configurations and the nextflow script (XX.nf)
 
+
+## Frequent questions and guides
+
+We created a small website with frequent questions, guides, and link to relavent information from DolphinNext. 
+
+Please visit the [site](https://pipeairr.github.io/pipeAIRR/) to see our guides. 
+
 ## Pre-processing
 
 In this section you can find pipelines to process the sequencer output files, meaning from 'raw reads' into an aligner ready fasta file.
