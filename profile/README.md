@@ -31,13 +31,13 @@ The pipeplines were build based on the [immcantation](https://immcantation.readt
 
 | Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
 |-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
-| RP1 | Raw  sequences           | 2X250      | +    | [11]              | pipeAIRR/RP1 |
-| RP2 | Raw  sequences                 | 2X250      | - | [4] | PipeAIRR/RP2 |
-| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | pipeAIRR/RP3 |
-| RP4 | Raw  sequences                 | 2X300      | + | [2]         | pipeAIRR/RP4 |
-| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | pipeAIRR/RP5A,pipeAIRR/RP5B                 |
-| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | pipeAIRR/RP6  |
-| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | pipeAIRR/RP7  |
+| RP1 | Raw  sequences           | 2X250      | +    | [11]              | [pipeAIRR/RP1](https://github.com/pipeAIRR/RP1) |
+| RP2 | Raw  sequences                 | 2X250      | - | [4] | [pipeAIRR/RP2](https://github.com/pipeAIRR/RP2) |
+| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | [pipeAIRR/RP3](https://github.com/pipeAIRR/RP3) |
+| RP4 | Raw  sequences                 | 2X300      | + | [2]         | [pipeAIRR/RP4](https://github.com/pipeAIRR/RP4) |
+| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | [pipeAIRR/RP5A](https://github.com/pipeAIRR/RP5A),[pipeAIRR/RP5B](https://github.com/pipeAIRR/RP5B)                 |
+| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | [pipeAIRR/RP6](https://github.com/pipeAIRR/RP6)  |
+| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | [pipeAIRR/RP7](https://github.com/pipeAIRR/RP7)  |
 
 
 ## Downstream analysis
@@ -54,9 +54,9 @@ The pipeplines were build based on the [Yaari lab framework](https://hub.docker.
 
 | Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
 |-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
-| PP1  | Processed sequences | -           | -  | [10]        | PipeAIRR/PP1  |
-| PP2  | Processed sequences | -           | -  | [6]         | PipeAIRR/PP2  |
-| PP3 | Processed sequences | -           | -  | [7]     | PipeAIRR/PP3 |
+| PP1  | Processed sequences | -           | -  | [10]        | [pipeAIRR/PP1](https://github.com/pipeAIRR/PP1)  |
+| PP2  | Processed sequences | -           | -  | [6]         | [pipeAIRR/PP2](https://github.com/pipeAIRR/PP2)  |
+| PP3 | Processed sequences | -           | -  | [7]     | [pipeAIRR/PP3](https://github.com/pipeAIRR/PP3) |
 
 ## Citations:
 
