@@ -1,7 +1,7 @@
-# PipeAIRR
+# pipeAIRR
 
 
-PipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.
+pipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.
 
 The pipelines are implemented with [DolphinNext](https://dolphinnext.readthedocs.io/en/latest/index.html#).
 
@@ -29,17 +29,20 @@ The pipeplines were build based on the [immcantation](https://immcantation.readt
 ### Available pipelines:
 
 
-- [pipline1](https://github.com/PipeAIRR/pipeline1) - [Stern2014](https://presto.readthedocs.io/en/stable/workflows/Stern2014_Workflow.html) - UMI Barcoded Illumina MiSeq 2x250 BCR mRNA
-- [pipline2](https://github.com/PipeAIRR/pipeline2) - [Greiff2014](https://presto.readthedocs.io/en/stable/workflows/Greiff2014_Workflow.html) - Illumina MiSeq 2x250 BCR mRNA
-- [pipline3](https://github.com/PipeAIRR/pipeline3) - [VanderHeiden2017](https://presto.readthedocs.io/en/stable/workflows/VanderHeiden2017_Workflow.html) - UMI Barcoded Illumina MiSeq 325+275 paired-end 5’RACE BCR mRNA
-- [pipline4](https://github.com/PipeAIRR/pipeline4) - [Galson2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full) - UMI Barcoded Illumina MiSeq 2x300 BCR mRNA with FR1 primers
-- [pipline5](https://github.com/PipeAIRR/pipeline5) - [Yaari1](https://bitbucket.org/yaarilab/processpipeline/src/master/pre_process/Pipeline_P1.sh) - 5'RACE UMI barcoded Illumina Miseq 2x300 pair-end
-- [pipline6](https://github.com/PipeAIRR/pipeline6) - [Yaari2](https://bitbucket.org/yaarilab/processpipeline/src/master/pre_process/Pipeline_P11.sh) - 5'RACE M1S and Z tags to sample pair-end reads
+| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
+|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
+| RP1 | Raw  sequences           | 2X250      | +    | [11]              | PipeAIRR/RP1 |
+| RP2 | Raw  sequences                 | 2X250      | - | [4] | PipeAIRR/RP2 |
+| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | PipeAIRR/RP3 |
+| RP4 | Raw  sequences                 | 2X300      | + | [2]         | PipeAIRR/RP4 |
+| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | PipeAIRR/RP5A,PipeAIRR/RP5B                 |
+| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | PipeAIRR/RP6  |
+| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | PipeAIRR/RP7  |
+
 
 ## Downstream analysis
 
 In this section you can find pipelines to analyze processed reads and infer genotype and haplotype.
-
 The pipeplines were build based on the [Yaari lab framework](https://hub.docker.com/repository/docker/peresay/suite), that contains tools from:
 - [immcantaton](https://immcantation.readthedocs.io/en/stable/)
 - [VDJbase](vdjbase.org)
@@ -48,4 +51,33 @@ The pipeplines were build based on the [Yaari lab framework](https://hub.docker.
 - [PIgLET](https://yaarilab.github.io/IGHV_reference_book/piglet_package.html)
 
 ### Available pipelines:
-- [ASC2022](https://yaarilab.github.io/IGHV_reference_book/allele_based_genotype.html) - IGH BCR repertoires analysis with IgBLAST sequence alignment, novel allele inference by TIgGER, and genotype inference by PIgLET.
+
+| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
+|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
+| PP1  | Processed sequences | -           | -  | [10]        | PipeAIRR/PP1  |
+| PP2  | Processed sequences | -           | -  | [6]         | PipeAIRR/PP2  |
+| PP3 | Processed sequences | -           | -  | [7]     | PipeAIRR/PP3 |
+
+## Citations:
+
+[1] Sivan Eliyahu, Oz Sharabi, Shiri Elmedvi, Reut Timor, Ateret Davidovich, Francois Vigneault, Chris Clouser, Ronen Hope, Assy Nimer, Marius Braun, Yaacov Y. Weiss, Pazit Polak, Gur Yaari, and Meital Gal-Tanamy. Antibody repertoire analysis of hepatitis c virus infections identifies immune signatures associated with spontaneous clearance. Frontiers in Immunology, 9:3004, 2018
+
+[2] Jacob D Galson, Sebastian Schaetzle, Rachael JM Bashford-Rogers, Matthew IJ Ray-313 bould, Aleksandr Kovaltsuk, Gavin J Kilpatrick, Ralph Minter, Donna K Finch, Jorge314 Dias, Louisa K James, et al. Deep sequencing of b cell receptor repertoires from covid-315 19 patients reveals strong convergent immune signatures. Frontiers in immunology,316 11:605170, 2020.
+
+[3] Moriah Gidoni, Omri Snir, Ayelet Peres, Pazit Polak, Ida Lindeman, Ivana Mikocziova, Vikas Kumar Sarna, Knut EA Lundin, Christopher Clouser, Francois Vigneault, et al. Mosaic deletion patterns of the human antibody heavy chain gene locus shown by bayesian haplotyping. Nature communications, 10(1):1–14, 2019
+
+[4] Victor Greiff, Ulrike Menzel, Ulrike Haessler, Skylar C Cook, Simon Friedensohn, Tarik A Khan, Mark Pogson, Ina Hellmann, and Sai T Reddy. Quantitative assessment of the robustness of next-generation sequencing of antibody variable gene repertoires from immunized mice. BMC immunology, 15:1–14, 2014.
+
+[5] Ning Jiang, Jiankui He, Joshua A Weinstein, Lolita Penland, Sanae Sasaki, Xiao-Song He, Cornelia L Dekker, Nai-Ying Zheng, Min Huang, Meghan Sullivan, et al. Lineage structure of the human antibody repertoire in response to influenza vaccination. Science translational medicine, 5(171):171ra19–171ra19, 2013
+
+[6] Aviv Omer, Or Shemesh, Ayelet Peres, Pazit Polak, Adrian J Shepherd, Corey T Watson, Scott D Boyd, Andrew M Collins, William Lees, and Gur Yaari. Vdjbase: an adaptive immune receptor genotype and haplotype database. Nucleic acids research, 48(D1):D1051–D1056, 2020
+
+[7] Ayelet Peres, William D Lees, Oscar L Rodriguez, Noah Y Lee, Pazit Polak, Ronen Hope, Meirav Kedmi, Andrew M Collins, Mats Ohlin, Steven H Kleinstein, Corey T Watson, and Gur Yaari. IGHV allele similarity clustering improves genotype inference from adaptive immune receptor repertoire sequencing data. Nucleic Acids Research, page gkad603, 08 2023.
+
+[8] Teresa Rubio, Maria Chernigovskaya, Susanna Marquez, Cristina Marti, Paula Izquierdo-Altarejos, Amparo Urios, Carmina Montoliu, Vicente Felipo, Ana Conesa, Victor Greiff, et al. A nextflow pipeline for t-cell receptor repertoire reconstruction and analysis from rna sequencing data. ImmunoInformatics, 6:100012, 2022.
+
+[9] Modi Safra, Zvi Tamari, Pazit Polak, Shachaf Shiber, Moshe Matan, Hani Karameh, Yigal Helviz, Adva Levy-Barda, Vered Yahalom, Avi Peretz, et al. Altered somatic hypermutation patterns in covid-19 patients classifies disease severity. Frontiers in Immunology, 14:1031914, 2023.13
+
+[10] Modi Safra, Lael Werner, Ayelet Peres, Pazit Polak, Naomi Salamon, Michael Schvimer, Batia Weiss, Iris Barshack, Dror S Shouval, and Gur Yaari. A somatic hypermutation based machine learning model stratifies individuals with crohn’s disease and controls. Genome Research, 33(1):71–79, 2023
+
+[11] Joel NH Stern, Gur Yaari, Jason A Vander Heiden, George Church, William F Donahue, Rogier Q Hintzen, Anita J Huttner, Jon D Laman, Rashed M Nagra, Alyssa Nylander, et al. B cells populating the multiple sclerosis brain mature in the draining cervical lymph nodes. Science translational medicine, 6(248):248ra107–248ra107, 2014
