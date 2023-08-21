@@ -31,13 +31,13 @@ The pipeplines were build based on the [immcantation](https://immcantation.readt
 
 | Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
 |-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
-| RP1 | Raw  sequences           | 2X250      | +    | [11]              | PipeAIRR/RP1 |
+| RP1 | Raw  sequences           | 2X250      | +    | [11]              | pipeAIRR/RP1 |
 | RP2 | Raw  sequences                 | 2X250      | - | [4] | PipeAIRR/RP2 |
-| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | PipeAIRR/RP3 |
-| RP4 | Raw  sequences                 | 2X300      | + | [2]         | PipeAIRR/RP4 |
-| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | PipeAIRR/RP5A,PipeAIRR/RP5B                 |
-| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | PipeAIRR/RP6  |
-| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | PipeAIRR/RP7  |
+| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | pipeAIRR/RP3 |
+| RP4 | Raw  sequences                 | 2X300      | + | [2]         | pipeAIRR/RP4 |
+| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | pipeAIRR/RP5A,pipeAIRR/RP5B                 |
+| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | pipeAIRR/RP6  |
+| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | pipeAIRR/RP7  |
 
 
 ## Downstream analysis
