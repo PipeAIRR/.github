@@ -1,49 +1,50 @@
-# pipeAIRR
+
+# Welcome {.unnumbered}
 
 
 pipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.
 
-The pipelines are implemented with [DolphinNext](https://dolphinnext.readthedocs.io/en/latest/index.html#).
+The pipelines are implemented with [ViaFoundry](https://viascientific.github.io/vfdocs/).
 
-We have devided the pipelines into two main sections:
+We have divided the pipelines into two main sections:
+
 1. Pre-processing
 2. Downstream analysis
 
 ##  Repository layout
 
-In each section directory you can find each of the pipelines directories containing the dolphinnext pipeline (XX.dn) as well as the configurations and the nextflow script (XX.nf)
+For each pipeline you can find a directory containing the ViaFoundry pipeline (main.dn) as well as the configurations and the nextflow script (main.nf)
 
-
-## Frequent questions and guides
-
-We created a small website with frequent questions, guides, and link to relavent information from DolphinNext. 
-
-Please visit the [site](https://pipeairr.github.io/pipeAIRR/) to see our guides. 
 
 ## Pre-processing
 
 In this section you can find pipelines to process the sequencer output files, meaning from 'raw reads' into an aligner ready fasta file.
 
-The pipeplines were build based on the [immcantation](https://immcantation.readthedocs.io/en/stable/) framework and spesificly the [pRESTO](https://presto.readthedocs.io/) tool suite.
+In this section you can find pipelines to process the sequencer output files, from ‘raw reads’ into a fasta file ready to be used as an input for an alignment step and other downstream tasks.
+
+The pipeplines were built based on the [immcantation](https://immcantation.readthedocs.io/en/stable/) framework and specifically the [pRESTO](https://presto.readthedocs.io/) tool suite.
+
+
 
 ### Available pipelines:
 
 
-| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
-|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
-| RP1 | Raw  sequences           | 2X250      | +    | [11]              | [pipeAIRR/RP1](https://github.com/pipeAIRR/RP1) |
-| RP2 | Raw  sequences                 | 2X250      | - | [4] | [pipeAIRR/RP2](https://github.com/pipeAIRR/RP2) |
-| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | [pipeAIRR/RP3](https://github.com/pipeAIRR/RP3) |
-| RP4 | Raw  sequences                 | 2X300      | + | [2]         | [pipeAIRR/RP4](https://github.com/pipeAIRR/RP4) |
-| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | [pipeAIRR/RP5A](https://github.com/pipeAIRR/RP5A),[pipeAIRR/RP5B](https://github.com/pipeAIRR/RP5B)                 |
-| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | [pipeAIRR/RP6](https://github.com/pipeAIRR/RP6)  |
-| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | [pipeAIRR/RP7](https://github.com/pipeAIRR/RP7)  |
+| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        | Zenodo DOI    | ViaFoundry pipeline |
+|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|-----------------------------------|--------------------------------|--------------------------------|
+| RP1 | Raw  sequences           | 2X250      | +    | [11]              | [pipeAIRR/RP1](https://github.com/pipeAIRR/RP1) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783397.svg)](https://doi.org/10.5281/zenodo.10783397)   | [pipeline/381](https://www.viafoundry.com/pipeline/381) |
+| RP2 | Raw  sequences                 | 2X250      | - | [4] | [pipeAIRR/RP2](https://github.com/pipeAIRR/RP2) |   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783402.svg)](https://doi.org/10.5281/zenodo.10783402)   | [pipeline/382](https://www.viafoundry.com/pipeline/382) |
+| RP3 | Raw  sequences                 | 5' RACE                      | + |  [3], [1]      | [pipeAIRR/RP3](https://github.com/pipeAIRR/RP3) |   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783403.svg)](https://doi.org/10.5281/zenodo.10783403)   | [pipeline/383](https://www.viafoundry.com/pipeline/383) |
+| RP4 | Raw  sequences                 | 2X300      | + | [2]         | [pipeAIRR/RP4](https://github.com/pipeAIRR/RP4) |  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783401.svg)](https://doi.org/10.5281/zenodo.10783401)   | [pipeline/386](https://www.viafoundry.com/pipeline/386) |
+| RP5 | Raw  sequences                 | 5' RACE                      | + | [9]       | [pipeAIRR/RP5A](https://github.com/pipeAIRR/RP5A), [pipeAIRR/RP5B](https://github.com/pipeAIRR/RP5B)                 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783404.svg)](https://doi.org/10.5281/zenodo.10783404), [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783407.svg)](https://doi.org/10.5281/zenodo.10783407)   | [pipeline/390](https://www.viafoundry.com/pipeline/390), [pipeline/393](https://www.viafoundry.com/pipeline/393) |
+| RP6 | Raw  sequences                 | Roche 454                    | -  | [5]        | [pipeAIRR/RP6](https://github.com/pipeAIRR/RP6)  | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783408.svg)](https://doi.org/10.5281/zenodo.10783408)   | [pipeline/396](https://www.viafoundry.com/pipeline/396) |
+| RP7 | Raw  sequences                 | 2X125 CD4                    | -  | [8]       | [pipeAIRR/RP7](https://github.com/pipeAIRR/RP7)  | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783409.svg)](https://doi.org/10.5281/zenodo.10783409)
+   | [pipeline/397](https://www.viafoundry.com/pipeline/397) |
 
 
 ## Downstream analysis
 
 In this section you can find pipelines to analyze processed reads and infer genotype and haplotype.
-The pipeplines were build based on the [Yaari lab framework](https://hub.docker.com/repository/docker/peresay/suite), that contains tools from:
+The pipelines were built based on the [Yaari lab framework](https://hub.docker.com/repository/docker/peresay/suite), which contains tools from:
 - [immcantaton](https://immcantation.readthedocs.io/en/stable/)
 - [VDJbase](vdjbase.org)
 - [TIgGER](https://tigger.readthedocs.io/en/stable/)
@@ -52,11 +53,18 @@ The pipeplines were build based on the [Yaari lab framework](https://hub.docker.
 
 ### Available pipelines:
 
-| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        |
-|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|
-| PP1  | Processed sequences | -           | -  | [10]        | [pipeAIRR/PP1](https://github.com/pipeAIRR/PP1)  |
-| PP2  | Processed sequences | -           | -  | [6]         | [pipeAIRR/PP2](https://github.com/pipeAIRR/PP2)  |
-| PP3 | Processed sequences | -           | -  | [7]     | [pipeAIRR/PP3](https://github.com/pipeAIRR/PP3) |
+| Pipeline       | Input data | Sequencing protocol | UMI        | Published paper(s)                      | GitHub Archive        | Zenodo DOI    | ViaFoundry pipeline |
+|-----------------------|---------------------|------------------------------|---------------------|--------------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| PP1  | Processed sequences | -           | -  | [10]        | [pipeAIRR/PP1](https://github.com/pipeAIRR/PP1)  | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783412.svg)](https://doi.org/10.5281/zenodo.10783412)    | [pipeline/401](https://www.viafoundry.com/pipeline/401) |
+| PP2  | Processed sequences | -           | -  | [6]         | [pipeAIRR/PP2](https://github.com/pipeAIRR/PP2)  | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783413.svg)](https://doi.org/10.5281/zenodo.10783413)    | [pipeline/402](https://www.viafoundry.com/pipeline/402) |
+| PP3 | Processed sequences | -           | -  | [7]     | [pipeAIRR/PP3](https://github.com/pipeAIRR/PP3) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10783414.svg)](https://doi.org/10.5281/zenodo.10783414)   | [pipeline/398](https://www.viafoundry.com/pipeline/398) |
+
+ * Processed sequences are the fasta file from the pre-processing step.
+
+
+### ViaFoundry access
+
+Please note to access the ViaFoundry pipeline you will need to create an account. You can create an account by contacting the ViaFoundry team [support@viascientific.com](support@viascientific.com), for further information please go [here](https://viascientific.github.io/vfdocs/ViaFoundry/quick/#signing-up)
 
 ## Citations:
 
